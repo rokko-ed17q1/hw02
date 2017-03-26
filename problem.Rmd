@@ -1,0 +1,134 @@
+---
+title: 'Assignment 02: Complex Numbers'
+author: 'Kenji Sato^[Kobe University. mail@kenjisato.jp]'
+date: '`r format(Sys.time(), "%d %B, %Y")`'
+output:
+  bookdown::pdf_document2:
+    fig_caption: yes
+    keep_tex: no
+    latex_engine: pdflatex
+    number_sections: yes
+    template: null
+    toc: no
+  bookdown::html_document2: default
+documentclass: scrartcl
+---
+
+# Overview
+
+## Purpose {-}
+
+The purpose of this assignment is as follows.
+
+1. To learn how to use R as a calculator.
+2. To learn basic properties of complex numbers.
+
+## Instructions {-}
+
+In this assignment, you will
+
+- clone the assignment repository and make a working branch (eg. `solution` branch);
+- solve the problems in Section 3; 
+- write the solutions in `solution.Rmd`; 
+- commit `solution.Rmd` and `solution.pdf`; and 
+- open a Pull Request.
+ 
+# Exercise
+
+Let 
+$$
+\begin{aligned}
+z_1 &= 2 - i \\
+z_2 &= -1 + 2i.
+\end{aligned}
+$$
+
+1. Calculate $z_1 + z_2$, $z_1 - z_2$, $z_1 z_2$, $z_1 / z_2$ and $z_1^3$. 
+   Do it with pen and ppaper and write solutions with LaTeX syntax.
+2. Use R to check the above calculatons are correct.
+
+
+## Solution {-}
+
+1.
+$$
+\begin{aligned}
+z_1 + z_2 &= 1 + i,\\
+z_1 - z_2 &= 3 - 3i,\\
+z_1 z_2 &= 5i, \\
+z_1 / z_2 &= - \frac{4}{5} - \frac{3}{5} i \\
+z_1 ^ 3 &= 2 - 11i.
+\end{aligned}
+$$
+2. Assignment:  
+    ```{r}
+    z1 <- 2 - 1i
+    z2 <- -1 + 2i
+    ```  
+   Addition:   
+    ```{r}
+    z1 + z2
+    ```  
+   Subtraction:  
+    ```{r}
+    z1 - z2
+    ```  
+   Multiplication:
+    ```{r}
+    z1 * z2
+    ```
+   Division:
+    ```{r}
+    z1 / z2
+    ```
+   Power:
+    ```{r}
+    z1 ^ 3
+    ```
+
+\pagebreak
+
+# Problems
+
+## (1) {-}
+
+Let 
+$$
+\begin{aligned}
+z_1 &= 3 + i \\
+z_2 &= 1 - i.
+\end{aligned}
+$$
+
+1. Calculate $z_1^2 z_2^3$. 
+   Do it with pen and ppaper and write solutions with LaTeX syntax.
+2. Use R to check the above calculatons are correct.
+
+
+## (2) {-}
+
+It is always advisable to put blank spaces around operators. For example, you should always write `x <- 1 + 2` not `x<-1+2`. Although the latter is a legal code, those esthetic spaces increase readability and reduce bugs. 
+
+The following code, however, is not allowed:
+
+```{r, eval=FALSE}
+z <- 1 + 2 i
+```
+
+1. Guess what happens if you try to run this code.
+2. Run this code and interpret the error message.
+3. Report what happened and why. 
+
+
+## (3) {-}
+
+A general form of complex numbers is $a + bi$, $a, b \in \mathbb R$. When $b = 1$, we usually omit $1$ and simply write as $a + i$; when $b = -1$ we write as $a - i$. In R, we cannot use such expressions as
+
+```{r, eval=FALSE}
+z <- 1 + i
+w <- 1 - i 
+```
+
+1. Guess what happens if you try to run these codes.
+2. Run these codes and interpret the error message.
+3. Report what happened and why. 

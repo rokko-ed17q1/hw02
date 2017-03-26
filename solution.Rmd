@@ -1,0 +1,87 @@
+---
+title: 'Assignment 02: Complex Numbers'
+author: 'Your name^[Affiliation]'
+date: '`r format(Sys.time(), "%d %B, %Y")`'
+output:
+  bookdown::pdf_document2:
+    fig_caption: yes
+    keep_tex: no
+    latex_engine: pdflatex
+    number_sections: yes
+    template: null
+    toc: no
+  bookdown::html_document2: default
+documentclass: scrartcl
+---
+
+# (1) {-}
+
+Let 
+$$
+\begin{aligned}
+z_1 &= 3 + i \\
+z_2 &= 1 - i.
+\end{aligned}
+$$
+
+1. Calculate $z_1^2 z_2^3$. 
+   Do it with pen and ppaper and write solutions with LaTeX syntax.
+2. Use R to check the above calculatons are correct.
+
+## Solution {-}
+<!-- Write Solution to (1) Here -->
+
+
+
+
+
+
+
+<!-- End of Solution to (1) -->
+
+# (2) {-}
+
+It is always advisable to put blank spaces around operators. For example, you should always write `x <- 1 + 2` not `x<-1+2`. Although the latter is a legal code, those esthetic spaces increase readability and reduce bugs. 
+
+The following code, however, is not allowed:
+
+```{r, eval=FALSE}
+z <- 1 + 2 i
+```
+
+1. Guess what happens if you try to run this code.
+2. Run this code and interpret the error message.
+3. Report what happened and why. 
+
+## Solution {-}
+<!-- Write Solution to (2) Here -->
+
+
+
+
+<!-- End of Solution to (2) -->
+
+# (3) {-}
+
+A general form of complex numbers is $a + bi$, $a, b \in \mathbb R$. When $b = 1$, we usually omit $1$ and simply write as $a + i$; when $b = -1$ we write as $a - i$. In R, we cannot use such expressions as
+
+```{r, eval=FALSE}
+z <- 1 + i
+w <- 1 - i 
+```
+
+1. Guess what happens if you try to run these codes.
+2. Run these codes and interpret the error message.
+3. Report what happened and why. 
+
+
+## Solution {-}
+<!-- Write Solution to (3) Here -->
+
+
+
+
+
+
+<!-- End of Solution to (3) -->
+
