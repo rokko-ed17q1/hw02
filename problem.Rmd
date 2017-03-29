@@ -29,7 +29,7 @@ In this assignment, you will
 
 - clone the assignment repository and make a working branch (eg. `solution` branch);
 - solve the problems in Section 3; 
-- write the solutions in `solution.Rmd`; 
+- write the solutions in `solution.Rmd` and knit it; 
 - commit `solution.Rmd` and `solution.pdf`; and 
 - open a Pull Request.
  
@@ -101,7 +101,7 @@ z_2 &= 1 - i.
 $$
 
 1. Calculate $z_1^2 z_2^3$. 
-   Do it with pen and ppaper and write solutions with LaTeX syntax.
+   Do it with pen and paper and write solutions with LaTeX syntax.
 2. Use R to check the above calculatons are correct.
 
 
