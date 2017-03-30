@@ -1,14 +1,13 @@
 # hw02: Economic Dynamics (2017Q1)
 
-公開：2017/04/13  
-締切：2017/04/16 18:00
+Publication: 2017/04/13  
+Due: 2017/04/16 18:00
 
-## 目的
+## Purpose
 
-1. 複素数の基礎
-2. 電卓として R を使う
+1. Understand complex numbers.
+2. Learn how to use R as a calculator.
 
-## 課題
+## Assignment
 
-`problem.pdf` を読み，指示の通りに実行すること。締切日時までに Pull Request を完了させてください。
-
+Read `problem.pdf` and follow the instructions therein. Open a Pull Request by the deadline.

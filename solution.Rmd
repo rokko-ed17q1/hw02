@@ -5,6 +5,8 @@ date: '`r format(Sys.time(), "%d %B, %Y")`'
 output:
   bookdown::pdf_document2:
     fig_caption: yes
+    includes:
+      in_header: asset/latex/custom.sty
     keep_tex: no
     latex_engine: pdflatex
     number_sections: yes
@@ -25,8 +27,8 @@ z_2 &= 1 - i.
 $$
 
 1. Calculate $z_1^2 z_2^3$. 
-   Do it with pen and ppaper and write solutions with LaTeX syntax.
-2. Use R to check the above calculatons are correct.
+   Do it with pen and paper and write solutions with LaTeX syntax.
+2. Use R to check the above calculations are correct.
 
 ## Solution {-}
 <!-- Write Solution to (1) Here -->
