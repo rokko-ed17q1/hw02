@@ -104,7 +104,7 @@ $$
 
 1. Calculate $z_1^2 z_2^3$. 
    Do it with pen and paper and write solutions with LaTeX syntax.
-2. Use R to check the above calculatons are correct.
+2. Use R to check the above calculations are correct.
 
 
 ## (2) {-}
